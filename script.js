@@ -1,6 +1,3 @@
-console.log("JS is working")
-alert("JS is working")
-
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
