@@ -21,9 +21,12 @@ document.addEventListener("keyup", function(event) {
 function update() {
   if (keys["ArrowUp"]) player.y -= player.speed;
   if (keys["ArrowDown"]) player.y += player.speed;
-  if(keys["ArrowLeft"]) player.x -= player.speed;
-  if(keys["ArrowRight"]) player.x += player.speed;
+ if(keys["ArrowLeft"]) player.x -= player.speed;
+ if(keys["ArrowRight"]) player.x += player.speed;
  }
+
+fucntion update() {
+  
 
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -40,14 +43,9 @@ function gameLoop() {
 
 gameLoop();
 
-
-function update() {
-   if (keys["ArrowUp"]) player.y -= player.speed;
-   if (keys["ArrowDown"]) player.y += player.speed;
-   if (keys["ArrowLeft"]) player.x -= player.speed;
-   if (keys["ArrowRight"]) player.x += player.speed;
-
   // Keep player inside the canvas
   player.x = Math.max(0, Math.min(canvas.width - player.size, player.x));
   player.y = Math.max(0, Math.min(canvas.height - player.size, player.y));
 }
+
+
