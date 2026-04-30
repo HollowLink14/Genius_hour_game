@@ -19,10 +19,10 @@ document.addEventListener("keyup", function(event) {
 });
 
 function update() {
-  if (keys["ArrowUp or w"]) player.y -= player.speed;
-  if (keys["ArrowDown or s"]) player.y += player.speed;
- if(keys["ArrowLeft or a"]) player.x -= player.speed;
- if(keys["ArrowRight or d"]) player.x += player.speed;
+  if (keys["ArrowUp"]) player.y -= player.speed;
+  if (keys["ArrowDown"]) player.y += player.speed;
+ if(keys["ArrowLeft"]) player.x -= player.speed;
+ if(keys["ArrowRight"]) player.x += player.speed;
  }
 
 fucntion update() {
